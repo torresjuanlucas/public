@@ -1,0 +1,119 @@
+﻿@charset "utf-8";
+
+/*styling reference page */
+/* Styling and positioning the Body and container*/
+body
+{
+    clear:both;
+    font-family: 'Audiowide', cursive;
+    font-size:14px;
+    color: white;
+    background-color: #262626;
+}
+
+#container {
+ 
+    width:80%;
+    height: 100%;
+    background-color: #262626;
+    margin:0 auto 0;
+    
+
+    
+}
+/* styling the header id selector*/
+
+/*Styling H1 with background image on text */
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    background: url(../assets/images/adobe_smoke1.jpg);
+    -webkit-background-clip: text;
+    color: rgba(255,255,255,0.8);
+    -webkit-text-fill-color: transparent;
+
+}
+
+h1 a{
+    font-size: 100px;
+    
+}
+
+h1:hover {
+        text-shadow: 0 0 10px #fff,
+                 0 0 20px rgba(255,255,255,0.3),
+                 0 0 30px rgba(255,33,33,1),
+                 0 0 40px rgba(255,33,33,0.8),
+                 0 0 60px rgba(255,33,33,0.5),
+                 0 0 100px rgba(255,33,33,0.3);
+}
+
+header nav {
+    margin:0;
+    text-align:center;
+    opacity:.8;
+    font-size: 12pt;
+    text-decoration:none;
+    color:#FFF;
+ background:#404240; /*grey color*/ /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+a {
+    
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    color: white;
+    font-family: 'Audiowide', cursive;
+}
+a:hover
+{
+    color:#e73827;
+      -webkit-transform: scale(1.1);
+    -moz-transform:scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+/* Section for reference page */
+ul {
+    font-family: 'Audiowide', cursive;
+    font-size:1em;
+    background:#333;
+    color:#fff;
+    width:auto;
+    margin:0 auto;
+}
+
+ul li {
+    
+    background:#666;
+    border-bottom:1px dashed #fff;
+    padding:10px;
+    
+}
+
+footer {
+    width: 100%; /* Full width */
+    height: auto;
+   margin: auto;
+    opacity: .8;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    bottom: 0;
+    left: 0;  
+}
+
+
+
+
+

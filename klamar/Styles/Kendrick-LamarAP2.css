@@ -1,0 +1,541 @@
+﻿@charset"utf-8";
+
+/*font for all pages */
+@font-face {
+    font-family: 'Audiowide';
+    src: url(https://fonts.gstatic.com/s/audiowide/v4/8XtYtNKEyyZh481XVWfVOltXRa8TVwTICgirnJhmVJw.woff2);
+}
+
+/*styling the body*/
+body{
+    max-width:100%;
+    font-family: 'Audiowide', cursive;
+    font-size:12px;
+    background-color: #343434;
+    color: #e0e1e2;
+}
+
+
+/*Styling H1 with background image on text */
+h1 {
+    font-size: 100px;
+    text-align: center;
+    background: url(../assets/images/adobe_smoke1.jpg);
+    -webkit-background-clip: text;
+    color: rgba(255,255,255,0.8);
+    -webkit-text-fill-color: transparent;
+
+}
+/*ensuring the font size for anchor tag for h1 stays at 100px */
+h1 a{
+    font-size: 100px;
+}
+
+/* glowing design when hover on h1 */
+h1:hover {
+        text-shadow: 0 0 10px #fff,
+                 0 0 20px rgba(255,255,255,0.3),
+                 0 0 30px rgba(255,33,33,1),
+                 0 0 40px rgba(255,33,33,0.8),
+                 0 0 60px rgba(255,33,33,0.5),
+                 0 0 100px rgba(255,33,33,0.3);
+}
+
+
+/*styling the navbar */
+
+header nav {
+    margin:0;
+    text-align:center;
+    opacity:.8;
+    font-size: 12pt;
+    text-decoration:none;
+    color:#FFF;
+ background:#404240; /*grey color*/ /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+/*styling the background for the main section of the page*/
+#bkground {
+    background-image: url(../assets/images/graffiti.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*Styling the container id selector*/
+.container {
+    width:80%;
+    border-right:3px solid #000; 
+    border-left: 3px solid #000;
+    margin:0 auto;
+    background-color: rgba(0,0,0,.8);
+
+}
+
+/* fix starting position of biography page section */
+#container {
+    margin-top: -200px;
+}
+
+
+/* Music Page */
+/*styling the Music page Heading */
+section>h2 {
+    font-size:40pt;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    float: left;
+    margin-left:-10px;
+background: #F00000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #2196f3, #f44336);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #2196f3, #f44336); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ -webkit-background-clip: text;
+    color: rgba(255,255,255,0.8);
+    -webkit-text-fill-color: transparent;
+}
+
+/* Music Page */
+/* entire container, keeps perspective, position*/
+.flip-container {
+    perspective: 1000px;
+    position: absolute;
+    top: 60%;
+    left:23%;
+    padding-bottom: 20px;
+}
+
+/* Music Page */
+/* positioning album cover*/
+#UU{
+    top: 47%;
+    left: 24%;
+}
+
+/* Music Page */
+/* positioning album cover*/
+#GKMC {
+    top:61%;
+    left: 16%;
+}
+
+/* Music Page */
+/* positioning album cover*/
+#Section80 {
+    top: 60%;
+    left: 23%;
+}
+
+/* Music Page */
+/* positioning album cover*/
+#overlyD {
+    top:54%;
+    left: 17%;
+}
+
+/* Music Page */
+/* size of main album cover images */ 
+table tr td section img {
+    width: 380px;
+    height: 380px;
+}
+
+/* Music Page */
+/* flip the pane when hovered */
+    .flip-container:hover .flipper {
+        transform: rotateY(180deg) scale(1.5);
+       transition-delay: 1.6s;
+    }
+
+/* Music Page */
+/* size of flip container and images */
+.flip-container, .front, .back {
+    width: 370px;
+    height: 370px;
+}
+
+/* Music Page */
+/* flip speed goes here */
+.flipper {
+    transition: 1.4s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* Music Page */
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Music Page */
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* Music Page */
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+/* Music Page */
+/* zooms in on other album covers when hovered on music page *//* Music Page */
+.zoom:hover {
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+/* tracklist styling on music page*/
+#tracklist {
+    border-color: #626664;
+    color: #ccc;
+    float: right;
+    border-width:25px;
+    font-size: 12pt;
+    margin: 10px 0 10px;
+
+}
+
+/* Music Page */
+/*changes color on individual track titles on the music page */
+table tr td ol li:hover {
+    filter: sepia(40%) invert(30%) ;
+}
+
+
+/* styling all anchor tags */
+a {
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    color: white;
+}
+
+/* styles color when hovering over a link */
+a:hover{
+    color:#ff0000;
+    -webkit-transform: scale(1.1);
+    -moz-transform:scale(1.1);
+    transform: scale(1.1);
+}
+
+/* adjusting table */
+table{
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Tour Page */
+/*center the tourlist */
+#tourList {
+    text-align: center;
+    padding-right: 100px;
+}
+
+/* Tour Page */
+/*adjusting size and opacity of picture on tour page */
+#tourpic {
+    width:680px;
+    height:600px;
+    float:left;
+    opacity:0.9;
+}
+
+/* Tour Page */
+/* button styling for buy ticket button */
+.btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    text-shadow: 2px 2px 4px #332233;
+    color: #ffffff;
+    font-size: 17px;
+    background: #3d3939;
+    padding:8px;
+    text-decoration: none;
+}
+
+
+/* Tour Page */
+/* button hover styling for buy ticket button */
+    .btn:hover {
+        background: #6e6b6b;
+        text-decoration: none;
+    }
+
+/* Tour Page */
+/* styling for table data on tour page while ensuring it doesn't affect table on music pages */
+ tr, td:not([id=tracklist]) {
+    border-bottom: 1px solid #3d3939;
+}
+
+/*Biography Page */
+/* The main header*/
+#h2 {
+    
+    margin-left:20%; 
+    text-align: center;
+    font-size: 50px;
+    display:inline;
+    background: #F00000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2196f3, #f44336);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2196f3, #f44336); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ -webkit-background-clip: text;
+    color: rgba(255,255,255,0.8);
+    -webkit-text-fill-color: transparent;
+}
+
+/*Biography Page */
+/* The main section for the content*/
+#main {
+    clear: both;
+    list-style: none;
+    width:100%;
+    margin:0 auto;
+    margin-top:70px;
+    height: 100% ;
+    padding-top: 130px;
+    border-radius: 6px;
+} 
+
+/*Biography Page */
+/* The special two headers*/
+.h4 {
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    height: 100%;
+    text-align:center;
+    font-size: 20px;
+    border-radius:8px 12px 16px;
+}
+
+/*Biography Page */
+/* The two main columns (leftcolumn and rightcolumn)*/
+#leftcolumn
+{
+    width:50%;
+   font-size:14px;
+    height: 100% ;
+    float:left;
+}
+
+#rightcolumn
+{
+    width:50%;
+    font-size:14px;
+    height: 100% ;
+    float:right; 
+}
+
+
+/*Biography Page */
+/* Hover and scale effects for images and titles*/
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+/*Biography Page */
+/*position and styling of images*/
+.img1{
+    margin-left: 10px;
+    border:10px outset darkgray;
+}
+  /*Biography Page */
+.scale > img  {
+     width:3em;
+     height:3em;
+     transition:all 1s ease;
+ }
+
+/*Biography Page */
+/*transforming images to enlarge and move to the left and up to not block content or stretch the page width */
+.scalex2:hover {
+    transform:translate(-100px,-50px) scale(1.7, 1.7);
+    transition-delay: .6s;
+    transition-duration: 1s;
+
+}
+
+/*Biography Page */
+/* Shadow effects*/
+.Hshadow{
+    box-shadow:4px 4px 5px 4px;
+    background-image: url("../Assets/Images/giphy.gif");
+    
+}
+
+/*Biography Page */
+#latest {
+    float:right;
+}
+
+/*Biography Page */
+/* Effects for the rotation image*/
+.flipimg {
+    position: relative;
+    color:#fff;
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 20px;
+    width:50px;
+    height: 200px;
+    transition:all 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.flipimg:hover {
+    transform:rotateY(180deg);
+}
+
+/*Biography Page */
+#front, #back {
+    background:gray;
+    width:50px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+/*Biography Page */
+#back {
+    transform:rotateY(180deg);
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    background: #F00000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2196f3, #f44336);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2196f3, #f44336); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ -webkit-background-clip: text;
+    color: rgba(255,255,255,0.8);
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Gallery Page */
+#gallerycontainer {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Gallery Page */
+.transition1 {
+    position: relative;
+    transition: all 1s ease;
+    z-index: 1;
+    -webkit-box-shadow: 10px 10px 37px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 37px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 37px 1px rgba(0,0,0,0.75);
+}
+
+/* Gallery Page */
+a .transition1:hover, .transition2:hover {
+    position: relative;
+    transform: scale(1.1);
+    z-index: 99;
+}
+
+/* Gallery Page */
+a .transition1:active {
+    filter: grayscale(100%);
+}
+
+
+/* form validation*/
+input:focus:required:invalid {
+    background-image: url("../assets/images/error.png");
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    background-color: lightyellow;
+}
+
+/* form page */
+input:required:valid {
+    background-image: url("../assets/images/accept.png");
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+
+/* form page */
+input[type="email"]:focus:required:invalid {
+    background-image: url("../assets/images/email_error.png");
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+
+/* form page */
+input[type="submit"] {
+    clear: both;
+    width: auto;
+    padding: 1em;
+    box-shadow: -2px 1px 2px 2px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+
+/* form page */
+input[type="submit"]:hover {
+        color: lightblue;
+        background-color: darkgray;
+    }
+
+/* form page */
+input[type="submit"]:active {
+        color: lightblue;
+        background-color: lightblue;
+    }
+
+    /* form page */
+input:hover:not([type="submit"]){
+       border:2px dashed #DC281E;
+    }
+
+    h2, table tr td:not([id=tracklist]), form {
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    p {
+        text-align:center;
+    }
+
+
+/*footer for all pages */
+footer {
+    width: 100%; /* Full width */
+    height: auto;
+   margin: auto;
+    opacity: .8;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    bottom: 0;
+    left: 0;  
+}

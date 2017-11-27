@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Mr Corte about page, learn about the man behind the business">
+ <meta name="keywords" content="barber, haircut, hair, shave, about, razor, straight razor, Mr Corte">
+<title>Mr. Corte | About</title>
+<link rel="stylesheet" type="text/css" href="styles/bulma.css">
+<link rel="stylesheet" type="text/css" href="font_awesome/css/font_awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"><!--link for font -->
+<link rel="icon" href="images/logoicon.jpg">
+</head>
+
+<body>
+
+<!-- start nav bar -->
+  <nav id="nav" class="nav nav-down" role="banner">
+  <div class="nav-left">
+   <a href="index_EN.html"><img id="topLogo" src="images/figurelogo.png"></a>
+  </div>
+
+  <div class="nav-center">
+     	<a id="lang" class="nav-item" href="about_FR.html">FR</a>
+  </div>
+
+  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" --><!--ADDED-->
+  <span id="nav-toggle" class="nav-toggle" onclick="navToggle()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <!-- This "nav-menu" is hidden on mobile -->
+  <!-- Add the modifier "is-active" to display it on mobile -->
+  <div id="nav-menu" class="nav-right nav-menu">
+    <a class="nav-item is-tab" href="index_EN.html">	
+    <i class="fa fa-home" aria-hidden="true"></i><!-- add is-active class to nav-item of current page -->
+      &nbsp;Home
+    </a>
+    <a class="nav-item is-tab" href="services_EN.html">
+    <i class="fa fa-scissors" aria-hidden="true"></i>
+      &nbsp;Services
+    </a>
+    <a class="nav-item is-tab" href="appointment_EN.html">
+    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+      &nbsp;Appointments
+    </a>
+    <a class="nav-item is-tab" href="gallery_EN.html">
+    <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      &nbsp;Gallery
+    </a>
+    <a class="nav-item is-tab" href="contact_EN.html">
+    <i class="fa fa-phone-square" aria-hidden="true"></i>
+      &nbsp;Contact
+    </a>
+    <a class="nav-item is-tab is-active" href="about_EN.html">
+    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+      &nbsp;About
+    </a>
+
+  </div>
+</nav>
+<!--HERO BANNER -->
+<section  class="hero">
+<div id="heroImg" class="hero-body">
+		<div class="container has-text-centered">
+			<img id="toplogo" src="images/newlogo.png">
+		</div>
+		</div>
+</section>
+
+<!-- main page content -->
+<!-- centers content in one column responsively -->
+<div class="columns">
+<div class="column is-8 is-offset-2">
+	<section class="section">
+			<h1 class="title is-1 has-text-centered">About Us</h1>
+			
+			<div class="column is-12 is-off-set-2">
+				<div class="column is-6 is-offset-3">
+				<p>
+				Everything started a couple of years ago for Jorge. He really wanted to start his own business. He knew he had the talent and the persistance that someone needs to walk the road of becoming their "own boss".
+				</p>
+				</div>
+				<div class="column is-6 is-offset-3">
+				<figure class="image">
+           			<img id="photo1"  src="images/jorge.jpg" alt="outside store"  title="outside Store" />
+          		</figure>
+				</div>
+          		
+          		<div class="column is-6 is-offset-3">
+				<p>
+				After spending countless nights planning a new start, he decided to open his own Barbershop in the Ville-Emard area, a quiet neighbourhood in the South-west of Montreal. His next step was to get the word out by promoting his new place and attracting as many new costumers as he could!
+				</p>
+				</div>
+				<div class="column is-6 is-offset-3">	
+				<figure class="image">
+           			<img id="photo2"  src="images/outsidestore.jpg" alt="outside store"  title="outside Store" />
+          		</figure>
+				</div>
+				<div class="column is-6 is-offset-3">
+				<p>
+				One of the main goals for George was to make Mr. Corte a place where guys from the neighbourhood could go talk, laugh, share stories, and have as much fun as possible while getting the latest haircut trends available at a fair price.
+				</p>
+				</div>
+
+				<div class="column is-6 is-offset-3">
+				<p>
+				Of Course, Mr. Corte became a great place to hang out. With the addition of new Barbers working with him and a modern-looking shop, he became the new center of attention on Allard Street. He has great music all the time, air-conditioning, a flatscreen tv with a video-game setup and a snack-bar always stocked! But one of the main attractions is "Mr. Chato", the official mascot of Mr. Corte Barbershop.
+				</p>
+				</div>
+				<div class="column is-6  is-offset-3">
+				 	<figure class="image">
+           				<img id="photo3"  src="images/mrchato.jpg" alt="mr Chato" title="mr Chato">
+          			</figure>
+          		</div>
+				<figure  class="image">
+           			<img id="photo4"  src="images/inside.jpg" alt="inside" title="inside">
+          		</figure>
+			</div>
+
+	</section>
+</div>
+</div>
+
+
+	<!--start footer -->
+<footer class="footer">
+	<div class="columns is-gapless">
+		<div class="column">
+			<p>
+				<i id="copyrightAlign" class="fa fa-copyright" aria-hidden="true"></i> 2017
+			</p>
+			<p>Check us out on &nbsp;
+			 <a href="https://www.facebook.com/Mr.corte/">	 
+      <span class="icon">
+        <i class="fa fa-facebook-square"></i>
+      </span>
+    </a>&nbsp;
+    &amp;
+    &nbsp;
+    <a href="https://www.instagram.com/mrcortemtl/?hl=en">
+      <span class="icon">
+        <i class="fa fa-instagram"></i>
+      </span>
+    </a></p>
+		</div>
+		<div id="addressFooter" class="column">
+			<p>Have a question? Give us a call<i class="fa fa-phone" aria-hidden="true" ></i> (514) 746-1092 </p>
+			<p>Find us located at 2642 Allard St</p>
+			<p>Montreal, QC H4E 2L6</p>
+			<div class="feature map">
+			<iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.960669088712!2d-73.59831898476462!3d45.45044867910078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc910faca4b7717%3A0x566706f8eca7ae06!2sMr+Corte+Barbershop!5e0!3m2!1sen!2sca!4v1498013958242" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+		<div class="column">
+		<h3>Opening Hours</h3>
+		<ul id="scheduleFooter">
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Monday: 11:00am - 6:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Tuesday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Wednesday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Thursday: 10:30am - 8:30pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Friday: 10:30am - 8:30pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Saturday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Sunday: 12:00am - 6:00pm
+			</li>
+		</ul>
+			
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="scripts/barber_javascript.js" ></script>
+	
+</body>
+</html>

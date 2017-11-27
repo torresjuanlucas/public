@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mr Corte contact us page">
+<meta name="keywords" content="contact us, Mr Corte, barber, barbershop, hair, haircut, shave, phone number, address">
+<title>Mr. Corte | Contact</title>
+<link rel="stylesheet" type="text/css" href="styles/bulma.css">
+<link rel="stylesheet" type="text/css"  href="font_awesome/css/font_awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"><!--link for font -->
+<link rel="icon" href="images/logoicon.jpg">
+</head>
+
+<body>
+
+<!-- start nav bar -->
+<nav id="nav" class="nav nav-down" role="banner">
+  <div class="nav-left">
+   <a href="index_EN.html"><img id="topLogo" src="images/figurelogo.png"></a>
+  </div>
+
+  <div class="nav-center">
+      <a id="lang" class="nav-item" href="contact_FR.html">FR</a>
+  </div>
+
+  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" --><!--ADDED-->
+  <span id="nav-toggle" class="nav-toggle" onclick="navToggle()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <!-- This "nav-menu" is hidden on mobile -->
+  <!-- Add the modifier "is-active" to display it on mobile -->
+  <div id="nav-menu" class="nav-right nav-menu">
+
+    <a class="nav-item is-tab" href="index_EN.html">	
+    <i class="fa fa-home" aria-hidden="true"></i><!-- add is-active class to nav-item of current page -->
+      &nbsp;Home
+    </a>
+    <a class="nav-item is-tab" href="services_EN.html">
+    <i class="fa fa-scissors" aria-hidden="true"></i>
+      &nbsp;Services
+    </a>
+    <a class="nav-item is-tab" href="appointment_EN.html">
+    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+     &nbsp;Appointments
+    </a>
+    <a class="nav-item is-tab" href="gallery_EN.html">
+    <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      &nbsp;Gallery
+    </a>
+     <a class="nav-item is-tab is-active" href="contact_EN.html">
+     <i class="fa fa-phone-square" aria-hidden="true"></i>
+      &nbsp;Contact
+    </a>
+    <a class="nav-item is-tab" href="about_EN.html">
+    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+      &nbsp;About
+    </a>
+  </div>
+</nav>
+<!--HERO BANNER -->
+<section  class="hero">
+<div id="heroImg" class="hero-body">
+		<div class="container has-text-centered">
+			<img id="toplogo" src="images/newlogo.png">
+		</div>
+	</div>
+</section>
+	
+<!-- main page content -->
+<!-- centers content in one column responsively -->
+<div class="columns">
+<div class="column is-8 is-offset-2">
+	<section class="section">
+		<h1 class="title is-1 has-text-centered">Have any questions?</h1>
+
+			<div class="tile is-ancestor is-vertical">
+			<div class="tile is-12 is-parent is-vertical has-text-centered">
+				<p class="subtitle has-text-centered">Give us a call at: (514) 746-1092 </p>
+				<p class="subtitle has-text-centered">or</p>
+				<div class=" has-button-centered">
+					<a href="appointment_EN.html" class="button is-dark">make an appointment!</a>
+				</div>
+			</div>
+			
+  
+   <div class="tile is-12 is-parent">
+    <div id="map" class="tile is-child box has-text-centered">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11195.842672206329!2d-73.5961303!3d45.4504487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x566706f8eca7ae06!2sMr+Corte+Barbershop!5e0!3m2!1sen!2sca!4v1498360050675" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="tile is-12 is-parent">
+   <div class="tile is-child box has-text-centered">
+      <p class="title">Opening hours</p>
+      	<h3>Monday: 11:00am - 6:00pm</h3>
+      	<h3>Tuesday: 10:30am - 7:00pm</h3>
+      	<h3>Wednesday: 10:30am - 7:00pm</h3>
+      	<h3>Thursday: 10:30am - 8:30pm</h3>
+      	<h3>Friday: 10:30am - 8:30pm</h3>
+      	<h3>Saturday: 10:30am - 7:00pm</h3>
+      	<h3>Sunday: 12:00am - 6:00pm</h3>
+    </div>
+
+    <div class="tile is-child box has-text-centered">
+      <p class="title">Address</p>
+      <h3>2642 Allard Street</h3>
+      <h3>Montreal, QC H4E 2L6</h3>
+      <h3>(514) 746-1092</h3>
+      <h3>mrcorte@gmail.com</h3>
+    </div>
+  </div>
+</div>
+<div class="tile is-parent">
+	<div id="photo3" class="tile is-child">
+		<figure class="image">
+           <img src="images/tablejack.jpg">
+          </figure>
+         </div>
+        </div>
+	</section>
+</div>
+</div>
+
+
+	<!--start footer -->
+<footer class="footer">
+	<div class="columns is-gapless">
+		<div class="column">
+			<p>
+        <i id="copyrightAlign" class="fa fa-copyright" aria-hidden="true"></i> 2017
+      </p>
+      <p>Check us out on &nbsp;
+       <a href="https://www.facebook.com/Mr.corte/">   
+      <span class="icon">
+        <i class="fa fa-facebook-square"></i>
+      </span>
+    </a>&nbsp;
+    &amp;
+    &nbsp;
+    <a href="https://www.instagram.com/mrcortemtl/?hl=en">
+      <span class="icon">
+        <i class="fa fa-instagram"></i>
+      </span>
+    </a></p>
+		</div>
+		<div id="addressFooter" class="column">
+			<p>Have a question? Give us a call <i class="fa fa-phone" aria-hidden="true" ></i> (514) 746-1092 </p>
+			<p>Find us located at 2642 Allard St</p>
+			<p>Montreal, QC H4E 2L6</p>
+			<div class="feature map">
+			<iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.960669088712!2d-73.59831898476462!3d45.45044867910078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc910faca4b7717%3A0x566706f8eca7ae06!2sMr+Corte+Barbershop!5e0!3m2!1sen!2sca!4v1498013958242" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+		<div class="column">
+		<h3>Opening Hours</h3>
+		<ul id="scheduleFooter">
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Monday: 11:00am - 6:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Tuesday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Wednesday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Thursday: 10:30am - 8:30pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Friday: 10:30am - 8:30pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Saturday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Sunday: 12:00am - 6:00pm
+			</li>
+		</ul>
+			
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="scripts/barber_javascript.js" ></script>
+	
+</body>
+</html>
+
+
+

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Faites un rendez-vous avec Mr Corte">
+<meta name="keywords" content="rendez-vous, schedule, Mr Corte, barbier">
+<title>Mr. Corte | Appt</title>
+<link rel="stylesheet" type="text/css" href="styles/bulma.css">
+<link rel="stylesheet" type="text/css" href="font_awesome/css/font_awesome.min.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
+<link rel="icon" href="images/logoicon.jpg">
+<!-- <link> add link for browser tab icon -->
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"><!--link for font -->
+<script src="scripts/modernizr.custom.58072.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- start nav bar -->
+<nav id="nav" class="nav nav-down" role="banner">
+
+  <div class="nav-left">
+   <a href="index_EN.html"><img id="topLogo" src="images/figurelogo.png"></a>
+  </div>
+
+
+	<div class="nav-center nav-menu" >
+		<a id="lang" class="nav-item" href="appointment_EN.html">EN</a>
+	</div>
+
+  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" --><!--ADDED-->
+  <span id="nav-toggle" class="nav-toggle" onclick="navToggle()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+
+  <!-- This "nav-menu" is hidden on mobile -->
+  <!-- Add the modifier "is-active" to display it on mobile -->
+  <div id="nav-menu" class="nav-right nav-menu">
+    <a class="nav-item is-tab" href="index_FR.html">
+    <i class="fa fa-home" aria-hidden="true"></i>	<!-- add is-active class to nav-item of current page -->
+     &nbsp;Accueil
+    </a>
+    <a class="nav-item is-tab" href="services_FR.html">
+    <i class="fa fa-scissors" aria-hidden="true"></i>
+     &nbsp;Services
+    </a>
+    <a class="nav-item is-tab is-active" href="appointment_FR.html">
+    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+      &nbsp;Rendez-vous
+    </a>
+    <a class="nav-item is-tab" href="gallery_FR.html">
+    <i class="fa fa-camera-retro" aria-hidden="true"></i>
+     &nbsp;Galerie
+    </a>
+    <a class="nav-item is-tab" href="contact_FR.html">
+    <i class="fa fa-phone-square" aria-hidden="true"></i>
+     &nbsp;Contact
+    </a>
+    <a class="nav-item is-tab" href="contact_FR.html">
+    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+     &nbsp;&Agrave; Propos
+    </a>
+  </div>
+</nav>
+<!--HERO BANNER -->
+<section  class="hero">
+<div id="heroImg" class="hero-body">
+		<div class="container has-text-centered">
+			<img id="logo" src="images/newlogo.png">
+		</div>
+		</div>
+</section>
+
+<!-- main page content -->
+<!-- centers content in one column responsively -->
+
+<!--start first row of columns-->
+<div class="columns">
+<!--start  thinner column -->
+			<div class="column is-3 is-offset-2 ">
+				<section id="formSection" class="section">
+				<h2 id="apptGuide">Comment réserver un rendez-vous:</h2>
+				<ol>
+					<li><p>Choisissez le type de coupe que vous voulez. Qu'il s'agisse d'un rasage propre, d'une coupe de barbe ou d'une coupe de cheveux, nous vous avons couvert! </p> <p> Nous offrons des rabais sur les combinaisons de coupure de barbe et cheveux, ainsi qu'un prix r&eacute;duit pour tous les enfants de moins de 10 ans.</p> </li>
+					<br />
+					<li>Choisissez une date &agrave; passer qui vous convient.</li>
+					<br />
+					<li><p>Choisissez un intervalle de temps qui vous convient le mieux.</p><p>*Veuillez noter que nous ne sommes pas ouverts avant midi (12 heures) le dimanche.</p></li>
+					<br />
+					<li>Entrez vos prénom et nom de famille, ainsi que votre numéro de téléphone et addresse de courriel électronique.</li>
+					<br />
+					<li>Une fois que vous avez rempli toutes vos informations, ajoutez toutes les demandes spéciales souhaitées et cliquez sur Soumettre rendez-vous!</li>
+				</ol>
+				</section>
+			</div>
+			<!-- end thinner column -->
+<div class="column is-5">
+<section id="formSection" class="section">
+<!--start of appointment form -->
+<form action="mailto:" method="post" onsubmit="return validationEvent()">
+<h2 id="formTitle">Prenez rendez-vous</h2>
+<!-- part of form for haircut selection -->
+<div class="field ">
+	<div class="field-label is-normal">
+		<label class="label">Sélectionnez une coupe</label>
+	</div>
+	<div class="field-body">
+		<div class="field is-narrow">
+			<div class="control">
+				<div class="select is-fullwidth is-primary">
+					<select id="hairSelect" required="required">
+						<option value="" disabled="disabled" selected="selected">Sélectionnez une coupe ou un paquet</option>
+						<option>Rasage / Parage Régulier $10</option>
+						<option>Rasage &agrave; la Vapeur $15</option>
+						<option>Coupe R&eacute;gulier $15</option>
+						<option>Coupe d'enfant (10 ans &amp; moins) $12</option>
+						<option>Coupe &amp; Parage de Barbe $18</option>
+						<option>Coupe &amp; Rasage &agrave; la Vapeur $22</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end haircut selection -->
+
+<!--add calendar-->
+<div class="field">
+	<div class="field-label is-normal">
+		<label class="label">Choisissez un date</label>
+	</div>
+	<div class="field-body">
+		<div class="field is-narrow">
+		<p class="control has-icons-left">
+			<input class="is-primary input" id="datepicker" />
+			<span class="icon is-small is-left">
+					<i class="fa fa-calendar"></i>
+				</span></p>
+		</div>
+	</div>
+</div>
+<!-- end calendar -->
+
+<!-- start timeslot selection -->
+<div class="field ">
+	<div class="field-label is-normal">
+		<label class="label">Quelle heure est le meuilleur pour vous?</label>
+	</div>
+	<div class="field-body">
+		<div class="field is-narrow">
+			<div class="control">
+				<div class="select is-fullwidth is-primary">
+					<select id="chooseTime" required="required">
+						<option value="" disabled="disabled" selected="selected">
+						Choisissez un temps</option>
+
+						<option>N'importe quel temps</option>
+						<option>Matin (jusqu'&agrave; midi)* N'inclus pas les Dimanches</option> <!--try to add javascript to disable this option when sundays selected in the calendar-->
+						<option>Apr&egrave;s-midi (12h - 17h)</option>
+						<option>Soir (De 17h)</option>
+						
+					</select>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!--start first and last name  and email request -->
+<div class="field">
+<!--start first name request -->
+	<div class="field-label is-normal">
+		<label class="label">Pr&eacute;nom</label>
+	</div>
+	<div class="field-body">
+		<div class="field ">
+			<p class="control has-icons-left">
+				<input id="firstName" required="required" class="input is-primary" type="text" name="First Name" placeholder="Jean">
+				<span class="icon is-small is-left">
+					<i class="fa fa-user"></i>
+				</span>
+			</p>
+	</div>
+	</div>
+	<!--end first name -->
+
+	<!--start last name-->
+	<div class="field-label is-normal">
+		<label class="label">Nom</label>
+	</div>
+	<div class="field-body">
+		<div class="field">
+			<p class="control has-icons-left">
+				<input id="lastName" required="required" class="input is-primary" type="text" name="First Name" placeholder="Smith">
+				<span class="icon is-small is-left">
+					<i class="fa fa-user"></i>
+				</span>
+			</p>
+	</div>
+</div>
+<!-- end last name-->
+
+<!--start phone number request-->
+<div class="field-label is-normal">
+		<label class="label">Num&eacute;ro de t&eacute;l&eacute;phone</label>
+	</div>
+	<div class="field-body">
+		<div class="field">
+			<p class="control has-icons-left">
+				<input id="phoneNum" required="required" class="input is-primary" type="number" name="Phone Number" placeholder="555-555-5555">
+				<span class="icon is-small is-left">
+					<i class="fa fa-phone"></i>
+				</span>
+			</p>
+	</div>
+</div>
+<!--end phone number request -->
+
+<!-- start email request -->
+<div class="field-label is-normal">
+		<label class="label">Addresse e-mail</label>
+	</div>
+	<div class="field-body">
+		<div class="field ">
+			<p class="control has-icons-left">
+				<input id="email" required="required" class="input is-primary" type="email" name="Email" placeholder="jsmith@example.com">
+				<span class="icon is-small is-left">
+					<i class="fa fa-envelope"></i>
+				</span>
+			</p>
+	</div>
+</div>
+<!-- end email request -->
+</div>
+<!-- end first and last name and email request --><!--all grouped into one field to reduce spacing between them-->
+
+<!-- start text area for special requests -->
+<div class="field">
+	<label class="label">Avez des demandes spéciales?</label>
+	<p class="control">
+		<textarea class="textarea" placeholder="Ajouter vos demandes ici"></textarea>
+	</p>
+</div>
+<!-- end of text area for special requests -->
+
+<!-- start submit button -->
+<div class="block">
+	<input type="submit" class="button is-primary is-outlined" value="Soumettre" />
+</div>
+<div>
+<!--end submit button-->
+</form>
+<!--end form-->
+	</section>
+</div>
+
+
+</div>
+<!-- end class columns for top row of site-->
+
+<!--start lower class columns -->
+<div class="columns">
+	<div class="column is-8 is-offset-2">
+	<section id="reviews" class="section">
+	<!--start media object-->
+		<article class="media">
+			<figure class="media-left">
+				<p class="image is-64x64"><a href="https://www.facebook.com/marie.p.guerin?fref=nf">
+					<img src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/19420359_10156513456510620_3649046993533232682_n.jpg?oh=75378d7dc36e561ccf4525b1a2f08358&oe=59E62910"></a>
+				</p>
+			</figure>
+			<div class="media-content">
+				<div class="content">
+					<p>
+						<strong><a href="https://www.facebook.com/marie.p.guerin?fref=nf">Marie-Pierre Guérin</a></strong> reviewed <a href="https://www.facebook.com/Mr.corte/?ref=page_internal">Mr Corte</a>
+						<span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+						<br />
+						<small>January 29</small>
+						<br />
+						Mon garçons de 6ans avais les cheveux très bien fait. Merci ! Patient avec les jeunes enfants.
+					</p>
+				</div>
+			</div>
+		</article>
+		<!--end media object -->
+
+		<!--start second media object -->
+		<article class="media">
+			<figure class="media-left">
+				<p class="image is-64x64"><a href="https://www.facebook.com/citron17?fref=nf">
+					<img src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-1/p160x160/18010399_787258148106341_2030770921114672533_n.jpg?oh=b18b5983fdde8ec3d2ea89a15ddb24df&oe=5A0E23F5"></a>
+				</p>
+			</figure>
+			<div class="media-content">
+				<div class="content">
+					<p>
+						<strong><a href="https://www.facebook.com/citron17?fref=nf">Flores Angel</a></strong> reviewed <a href="https://www.facebook.com/Mr.corte/?ref=page_internal">Mr Corte</a>
+						<span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+						<br />
+						<small>10 Octobre, 2016</small>
+						<br />
+						Tres bon service a tres bon prix!
+					</p>
+				</div>
+			</div>
+		</article>
+		</section>
+	</div>
+</div>
+	
+
+
+	<!--start footer -->
+<footer class="footer">
+	<div class="columns is-gapless">
+		<div class="column">
+			<p>
+				<i id="copyrightAlign" class="fa fa-copyright" aria-hidden="true"></i> 2017
+			</p>
+			<p>Venez-nous voir sur &nbsp;
+			 <a href="https://www.facebook.com/Mr.corte/">	 
+      <span class="icon">
+        <i class="fa fa-facebook-square"></i>
+      </span>
+    </a>&nbsp;
+    &amp;
+    &nbsp;
+    <a href="https://www.instagram.com/mrcortemtl/?hl=en">
+      <span class="icon">
+        <i class="fa fa-instagram"></i>
+      </span>
+    </a></p>
+		</div>
+		<div id="addressFooter" class="column">
+			<p>Veuillez poser une question? Donnez-nous un appel <i class="fa fa-phone" aria-hidden="true" ></i> (514) 746-1092 </p>
+			<p>Trouvez-nous au 2642 Allard St</p>
+			<p>Montreal, QC H4E 2L6</p>
+			<div class="feature map">
+			<iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.960669088712!2d-73.59831898476462!3d45.45044867910078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc910faca4b7717%3A0x566706f8eca7ae06!2sMr+Corte+Barbershop!5e0!3m2!1sen!2sca!4v1498013958242" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+		<div class="column">
+		<h3>Heures d'Ouverture</h3>
+		<ul id="scheduleFooter">
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Lundi: 11:00h - 18:00h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Mardi: 10:30h - 19:00h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Mercredi: 10:30h - 19:00h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Jeudi: 10:30h - 20:30h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Vendredi: 10:30h - 20:30h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Samedi: 10:30h - 19:00h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Dimanche: 12:00h - 18:00h
+			</li>
+		</ul>
+			
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+ <script type="text/javascript" src="scripts/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="scripts/barber_javascript.js" ></script>
+<script type="text/javascript" src="scripts/barber_javascript_form.js"></script>
+	
+</body>
+</html>

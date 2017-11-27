@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="Home page of Mr Corte barbershop">
+<meta name="keywords" content="barbershop, barber, Mr Corte, home page, beard, haircut, trim, haircut">
+<title>Mr. Corte | Home</title>
+<link rel="stylesheet" type="text/css" href="styles/bulma.css">
+<link rel="stylesheet" type="text/css" href="font_awesome/css/font_awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"><!--link for font -->
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
+<link rel="icon" href="images/logoicon.jpg">
+<!-- <link> add link for browser tab icon -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="scripts/modernizr.custom.05819.js"></script>
+<script type="text/javascript" src="scripts/barber_javascript_index.js"></script>
+</head>
+
+<body>
+
+<!-- start nav bar -->
+<nav id="nav" class="nav nav-down" role="banner">
+  <div class="nav-left">
+     <a href="index_EN.html"><img id="topLogo" src="images/figurelogo.png"></a>
+  </div>
+
+<div class="nav-center nav-menu " >
+	<a id="lang" class="nav-item" href="index_FR.html">FR</a>
+</div>
+
+
+  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" --><!--ADDED-->
+  <span id="nav-toggle" class="nav-toggle" onclick="navToggle()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+
+  <!-- This "nav-menu" is hidden on mobile -->
+  <!-- Add the modifier "is-active" to display it on mobile -->
+  <div id="nav-menu" class="nav-right nav-menu">
+
+  <a class="nav-item is-tab is-active" href="index_EN.html"> 
+  <i class="fa fa-home" aria-hidden="true"></i><!-- add is-active class to nav-item of current page -->
+      &nbsp;Home
+    </a>
+    <a class="nav-item is-tab" href="services_EN.html">
+    <i class="fa fa-scissors" aria-hidden="true"></i>
+      &nbsp;Services
+    </a>
+    <a class="nav-item is-tab" href="appointment_EN.html">
+    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+      &nbsp;Appointments
+    </a>
+    <a class="nav-item is-tab" href="gallery_EN.html">
+    <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      &nbsp;Gallery
+    </a> 
+    <a class="nav-item is-tab" href="contact_EN.html">
+    <i class="fa fa-phone-square" aria-hidden="true"></i>
+      &nbsp;Contact
+    </a>
+    <a class="nav-item is-tab" href="about_EN.html">
+    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+      &nbsp;About
+    </a>
+  </div>
+</nav>
+<!--HERO BANNER -->
+<section  class="hero">
+<div id="heroImg" class="hero-body">
+		<div class="container has-text-centered">
+			<img id="logo" src="images/newlogo.png">
+			<div class="block">
+	<a href="appointment_EN.html" class="button is-primary">Schedule an appointment today!</a>
+</div>
+		</div>
+		</div>
+</section>
+
+<!-- main page content -->
+<!-- centers content in one column responsively -->
+<div class="columns">
+<div class="column is-6 is-offset-3">
+	<section id="intro" class="section">
+		<h1 class="title has-text-centered">Come in and get faded!</h1>
+		<p >At Mr Corte, we know the importance of a good haircut. A haircut is one of the most important aspects of one's style, with the fade standing out as a go-to classic for many a fine gentleman, and no one pulls a fade off better than Mr Corte!</p>
+		</section>
+</div>
+</div>
+<div class="columns">
+<div class="column is-3 is-offset-3">
+	<section id="hoursHome" class="section">
+	<span><i class="fa fa-clock-o fa-3x"></i></span>
+		<span><h3 class="title is-4">Opening Hours</h3></span>
+		<br/>
+		<ul>
+			<li>
+			Monday: 11:00am - 6:00pm
+			</li>
+			<li>
+			Tuesday: 10:30am - 7:00pm
+			</li>
+			<li>
+			Wednesday: 10:30am - 7:00pm
+			</li>
+			<li>
+			Thursday: 10:30am - 8:30pm
+			</li>
+			<li>
+			Friday: 10:30am - 8:30pm
+			</li>
+			<li>
+			Saturday: 10:30am - 7:00pm
+			</li>
+			<li>
+			Sunday: 12:00am - 6:00pm
+			</li>
+		</ul>
+	</section>
+</div>
+<div class="column is-3">
+	<a href="about_EN.html">
+		<img src="images/card_index.jpg"/>
+		</a>
+</div>
+</div>
+<div class="columns">
+<div class="column is-auto"></div>
+	<div class="column is-half">
+		<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMr.corte%2Fvideos%2F1300573616632268%2F&" width="600" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+	</div>
+	<div class="column is-auto"></div>
+</div>
+
+
+	<!--start footer -->
+<footer class="footer">
+	<div class="columns is-gapless">
+		<div class="column">
+			<p>
+				<i id="copyrightAlign" class="fa fa-copyright" aria-hidden="true"></i> 2017
+			</p>
+			<p>Check us out on &nbsp;
+			 <a href="https://www.facebook.com/Mr.corte/">	 
+      <span class="icon">
+        <i class="fa fa-facebook-square"></i>
+      </span>
+    </a>&nbsp;
+    &amp;
+    &nbsp;
+    <a href="https://www.instagram.com/mrcortemtl/?hl=en">
+      <span class="icon">
+        <i class="fa fa-instagram"></i>
+      </span>
+    </a></p>
+		</div>
+		<div id="addressFooter" class="column">
+			<p>Have a question? Give us a call <i class="fa fa-phone" aria-hidden="true" ></i> (514) 746-1092 </p>
+			<p>Find us located at 2642 Allard St</p>
+			<p>Montreal, QC H4E 2L6</p>
+			<div class="feature map">
+			<iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.960669088712!2d-73.59831898476462!3d45.45044867910078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc910faca4b7717%3A0x566706f8eca7ae06!2sMr+Corte+Barbershop!5e0!3m2!1sen!2sca!4v1498013958242" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+		<div class="column">
+		<h3>Opening Hours</h3>
+		<ul id="scheduleFooter">
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Monday: 11:00am - 6:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Tuesday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Wednesday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Thursday: 10:30am - 8:30pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Friday: 10:30am - 8:30pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Saturday: 10:30am - 7:00pm
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Sunday: 12:00am - 6:00pm
+			</li>
+		</ul>
+			
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="scripts/barber_javascript.js" ></script>
+	
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Les services offert par les barbier de Mr Corte">
+<meta name="keywords" content="services, coupe, cheveux, barbe, rasage, barbier, Mr Corte">
+<title>Mr. Corte | Services</title>
+<link rel="stylesheet" type="text/css" href="styles/bulma.css">
+<link rel="stylesheet" type="text/css"  href="font_awesome/css/font_awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"><!--link for font -->
+<link rel="icon" href="images/logoicon.jpg">
+</head>
+
+<body>
+
+<!-- start nav bar -->
+<nav id="nav" class="nav nav-down" role="banner">
+  <div class="nav-left">
+   <a href="index_FR.html"><img id="topLogo" src="images/figurelogo.png"></a>
+  </div>
+
+  <div class="nav-center">
+     <a id="lang" class="nav-item" href="services_EN.html">EN</a>
+  </div>
+
+  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" --><!--ADDED-->
+  <span id="nav-toggle" class="nav-toggle" onclick="navToggle()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <!-- This "nav-menu" is hidden on mobile -->
+  <!-- Add the modifier "is-active" to display it on mobile -->
+  <div id="nav-menu" class="nav-right nav-menu">
+
+    <a class="nav-item is-tab" href="index_FR.html">	
+    <i class="fa fa-home" aria-hidden="true"></i><!-- add is-active class to nav-item of current page -->
+      &nbsp;Accueil
+    </a>
+    <a class="nav-item is-ta is-active" href="services_FR.html">
+    <i class="fa fa-scissors" aria-hidden="true"></i>
+      &nbsp;Services
+    </a>
+    <a class="nav-item is-tab" href="appointment_FR.html">
+    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+      &nbsp;Rendez-vous
+    </a>
+    <a class="nav-item is-tab" href="gallery_FR.html">
+    <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      &nbsp;Gallerie
+    </a>
+    <a class="nav-item is-tab" href="contact_FR.html">
+    <i class="fa fa-phone-square" aria-hidden="true"></i>
+      &nbsp;Contactez-nous
+    </a>
+    <a class="nav-item is-tab" href="about_FR.html">
+    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+      &nbsp;À propos
+    </a>
+  </div>
+</nav>
+<!--HERO BANNER -->
+<section  class="hero">
+<div id="heroImg" class="hero-body">
+		<div class="container has-text-centered">
+			<img id="toplogo" src="images/newlogo.png">
+		</div>
+	</div>
+</section>
+	
+<!-- main page content -->
+<!-- centers content in one column responsively -->
+<div class="columns">
+<div class="column is-8 is-offset-2">
+	<section class="section">
+		<h1 class="title is-1 has-text-centered">Services</h1>
+	
+	<div class="columns">
+  		<div id="services" class="column is-half is-offset-one-quarter has-text-centered">
+			<div class="">
+				<div class="title is-5 ">Coupe the cheveux</div>
+				<div class="subtitle is-6">(Coupe régulier)</div>
+				<div class="title is-4">$15</div>
+			</div>
+				
+ 				
+ 			<div class="">
+ 				<div class="title is-5">Taillage de Barbe</div>
+				<div class="subtitle is-6">(Régulier)</div>
+				<div class="title is-4 ">$10</div>
+			</div>
+						
+					
+			<div class="">	
+				<div class="title is-5">Couple de cheveux et Taillage de barbe</div>
+				<div class="subtitle is-6">(Coupe et taillage régulier)</div>
+				<div class="title is-4 ">$18</div>
+			</div>
+
+				
+			<div class="">
+				<div class="title is-5">Coupe pour enfant</div>
+				<div class="subtitle is-6">(Coupe Régulier)</div>
+				<div class="title is-4 ">$12</div>
+			</div>
+				
+					
+			<div class="">	
+				<div class="title is-5">Rasage &agrave; vapeur</div>
+				<div class="subtitle is-6">(Rendez-vous seulement)</div>
+				<div class="title is-4 ">$15</div>
+			</div>
+			
+				
+			<div class="">
+				<div class="title is-5">Coupe de cheuveux et Rasage &agrave; vapeur</div>
+				<div class="subtitle is-6">(Rendez-vous seulement)</div>
+				<div class="title is-4 ">$22</div>
+			</div>
+  		</div>
+	</div>
+
+</section>
+</div>
+</div>
+
+
+	<!--start footer -->
+<footer class="footer">
+	<div class="columns is-gapless">
+		<div class="column">
+			<p>
+				<i id="copyrightAlign" class="fa fa-copyright" aria-hidden="true"></i> 2017
+			</p>
+			<p>Venez-nous voir sur &nbsp;
+			 <a href="https://www.facebook.com/Mr.corte/">	 
+      <span class="icon">
+        <i class="fa fa-facebook-square"></i>
+      </span>
+    </a>&nbsp;
+    &amp;
+    &nbsp;
+    <a href="https://www.instagram.com/mrcortemtl/?hl=en">
+      <span class="icon">
+        <i class="fa fa-instagram"></i>
+      </span>
+    </a></p>
+		</div>
+		<div id="addressFooter" class="column">
+			<p>Veuillez poser une question? Donnez-nous un appel <i class="fa fa-phone" aria-hidden="true" ></i> (514) 746-1092 </p>
+			<p>Trouvez-nous au 2642 Allard St</p>
+			<p>Montreal, QC H4E 2L6</p>
+			<div class="feature map">
+			<iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.960669088712!2d-73.59831898476462!3d45.45044867910078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc910faca4b7717%3A0x566706f8eca7ae06!2sMr+Corte+Barbershop!5e0!3m2!1sen!2sca!4v1498013958242" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+		<div class="column">
+		<h3>Heures d'Ouverture</h3>
+		<ul id="scheduleFooter">
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Lundi: 11:00h - 18:00h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Mardi: 10:30h - 19:00h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Mercredi: 10:30h - 19:00h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Jeudi: 10:30h - 20:30h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Vendredi: 10:30h - 20:30h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Samedi: 10:30h - 19:00h
+			</li>
+			<li>
+			<i class="fa fa-clock-o"></i>
+			Dimanche: 12:00h - 18:00h
+			</li>
+		</ul>
+			
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="scripts/barber_javascript.js" ></script>
+	
+</body>
+</html>
+
+
+
